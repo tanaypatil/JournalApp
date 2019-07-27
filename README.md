@@ -49,7 +49,7 @@ On the terminal type - python main.py
 ***All the data is saved in json files. No database is used.***
 
 Upon starting the app the user sees the welcome screen. The user is given choice to signup, login or exit.<br>
-Sign Up-
+***Sign Up-***
 1. If the user selects to Sign up the the user is redirected to Signup screen and is asked username and password.
 2. When the user enters a username and password, the credentials are validated. If the crdentials are valid the user is signed up.
 3. Username is valid if it's length is 8 and is alphanumeric. Password is valid when it's length is 8.
@@ -58,17 +58,17 @@ Sign Up-
 6. The user is redirected to home screen after signing up successfully and the user session is saved in user_session.json.
 7. If the number of registered users is equal to the MAX_USERS_COUNT from settings.py file the a new user can't sign up.
 
-Log In-<br>
+***Log In-***<br>
 1. The user is asked for credentials when login option is selected.
 2. The entered credentials are validated. The app checks if the user exists and the password is correct.
 3. The provided password is verified against the stored password.
 4. Upon successful login the user is redirected to the home screen.
 5. The user session is saved in user_session.json
 
-Exit-<br>
+***Exit-***<br>
 The app is closed.
 
-Home Screen-<br>
+***Home Screen-***<br>
 On the home screen the user is given option to create a journal entry or list all entries.
 Create Journal Entry - 
 1. The user is asked to enter journal entry text.
@@ -78,9 +78,9 @@ Create Journal Entry -
 4. If the entry is not the user's first entry then the entry is added in the username.json file which already exists.
 5. If the number of journal entries is equal to MAX_JOURNAL_ENTRIES then the oldest entry is replaced if a new entry is added.
 
-List Journal Entries - 
+***List Journal Entries -*** 
 1. Lists all journal entries from user's journal(username.json).
 
-Log Out - 
+***Log Out*** - 
 1. The user session is invalidated by removing data from user_session.json.
 2. User is redirected to Welcome screen.
